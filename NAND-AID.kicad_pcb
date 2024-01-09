@@ -232,7 +232,7 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 9aa0f230-054e-4fb1-8199-f1f2cbf86744))
     (fp_line (start 1.65 1.25) (end 1.65 -1.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 9e8a1963-43af-4a19-95c7-0df6f558ee4d))
-    (pad "" smd custom (at -0.725 0) (size 0.3 0.3) (layers "F.Cu" "F.Mask")
+    (pad "" smd custom (at -0.725 0) (size 0.3 0.3) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 9 "DUMMY") (zone_connect 2) (thermal_bridge_angle 45)
       (options (clearance outline) (anchor rect))
       (primitives
@@ -246,7 +246,7 @@
           )
           (width 0) (fill yes))
       ) (tstamp 505db2e9-af6d-43ae-ad59-4d5112732e84))
-    (pad "" smd custom (at 0.725 0) (size 0.3 0.3) (layers "F.Cu" "F.Mask")
+    (pad "" smd custom (at 0.725 0) (size 0.3 0.3) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "GND") (zone_connect 2) (thermal_bridge_angle 45)
       (options (clearance outline) (anchor rect))
       (primitives
