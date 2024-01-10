@@ -3,7 +3,7 @@ kibot:
 
 outputs:
   - name: 'excellon'
-    comment: 'This is the main format for the drilling machine.'
+    comment: 'Create driling instructions.'
     type: 'excellon'
     dir: 'gerber'
     options:
@@ -18,7 +18,7 @@ outputs:
       route_mode_for_oval_holes: true
       zeros_format: 'DECIMAL_FORMAT'
   - name: 'gerber'
-    comment: 'This is the main fabrication format for the PCB except drilling instructions.'
+    comment: 'Create main fabrication (except drilling) instructions.'
     type: 'gerber'
     dir: 'gerber'
     options:
