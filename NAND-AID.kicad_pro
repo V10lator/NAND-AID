@@ -515,5 +515,7 @@
     "subpart_id_separator": 0
   },
   "sheets": [],
-  "text_variables": {}
+  "text_variables": {
+    "git_hash": "Git hash: <fb49c41>"
+  }
 }

@@ -5,7 +5,7 @@ outputs:
   # Excellon drill format:
   # You can create a map file for documentation purposes.
   # This output is what you get from the 'File/Fabrication output/Drill Files' menu in pcbnew.
-  - name: 'excellon_example'
+  - name: 'excellon'
     comment: 'This is the main format for the drilling machine.'
     type: 'excellon'
     dir: 'gerber'
@@ -58,8 +58,8 @@ outputs:
   # Gerber format:
   # This output is what you get from the File/Plot menu in pcbnew.
   # If you use custom fonts and/or colors please consult the `resources_dir` global variable.
-  - name: 'gerber_example'
-    comment: 'This is the main fabrication format for the PCB.'
+  - name: 'gerber'
+    comment: 'This is the main fabrication format for the PCB except drilling instructions.'
     type: 'gerber'
     dir: 'gerber'
     options:
@@ -134,3 +134,64 @@ outputs:
       # [string=''] Board variant to apply
       variant: ''
     layers: 'selected'
+
+  - name: 'pcbdraw top'
+    comment: 'Create a 2D PNG image (top).'
+    type: 'pcbdraw'
+    dir: './'
+    options:
+      add_to_variant: false
+      bottom: true
+      dpi: 1200
+      format: 'png'
+      margin:
+        bottom: 0
+        left: 0
+        right: 0
+        top: 0
+      outline_width: 0.1
+      show_components: none
+      show_solderpaste: false
+      size_detection: 'kicad_edge'
+      style:
+        board: '#208b47'
+        clad: '#240d00'
+        copper: '#285e3a'
+        highlight_on_top: false
+        highlight_padding: 1.5
+        highlight_style: 'stroke:none;fill:#ff0000;opacity:0.5;'
+        outline: '#000000'
+        pads: '#8b898c'
+        silk: '#d5dce4'
+        vcut: '#bf2600'
+      warnings: 'visible'
+  - name: 'pcbdraw bottom'
+    comment: 'Create a 2D PNG image (bottom).'
+    type: 'pcbdraw'
+    dir: './'
+    options:
+      add_to_variant: false
+      bottom: true
+      dpi: 1200
+      format: 'png'
+      margin:
+        bottom: 0
+        left: 0
+        right: 0
+        top: 0
+      outline_width: 0.1
+      show_components: none
+      show_solderpaste: false
+      size_detection: 'kicad_edge'
+      style:
+        board: '#208b47'
+        clad: '#240d00'
+        copper: '#285e3a'
+        highlight_on_top: false
+        highlight_padding: 1.5
+        highlight_style: 'stroke:none;fill:#ff0000;opacity:0.5;'
+        outline: '#000000'
+        pads: '#8b898c'
+        silk: '#d5dce4'
+        vcut: '#bf2600'
+      warnings: 'visible'
