@@ -1,0 +1,26 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  create-gerber:
+    name: Create gerber file
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run docker image
+        run: |
+          docker build . -t builder
+          docker run --rm -v ${PWD}:/project builder kibot
+      - name: Upload gerber file
+        uses: actions/upload-artifact@v4
+        with:
+          name: gerber
+          path: gerber/*
+          if-no-files-found: error

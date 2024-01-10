@@ -1,0 +1,136 @@
+kibot:
+  version: 1
+
+outputs:
+  # Excellon drill format:
+  # You can create a map file for documentation purposes.
+  # This output is what you get from the 'File/Fabrication output/Drill Files' menu in pcbnew.
+  - name: 'excellon_example'
+    comment: 'This is the main format for the drilling machine.'
+    type: 'excellon'
+    dir: 'gerber'
+    options:
+      # [string|list(string)='_none'] Name of the filter to mark components as not fitted.
+      # A short-cut to use for simple cases where a variant is an overkill
+      dnf_filter: '_none'
+      # [number=0] number of digits for integer part of coordinates (0 is auto)
+      left_digits: 0
+      # [dict|string] [hpgl,ps,gerber,dxf,svg,pdf] Format for a graphical drill map.
+      # Not generated unless a format is specified
+      map:
+        # [string='%f-%i%I%v.%x'] Name for the map file, KiCad defaults if empty (%i='PTH_drill_map'). Affected by global options
+        output: '%f-%i%I%v.%x'
+        # [string='pdf'] [hpgl,ps,gerber,dxf,svg,pdf] Format for a graphical drill map
+        type: 'gerber'
+      # [boolean=true] Use metric units instead of inches
+      metric_units: false
+      # [boolean=false] Use a minimal header in the file
+      minimal_header: false
+      # [boolean=false] Invert the Y axis
+      mirror_y_axis: false
+      # [string] Force this replacement for %i when generating NPTH files
+      #npth_id: null
+      # [string='%f-%i%I%v.%x'] name for the drill file, KiCad defaults if empty (%i='PTH_drill'). Affected by global options
+      output: '%f-%i%I%v.%x'
+      # [string|list(string)='_none'] Name of the filter to transform fields before applying other filters.
+      # A short-cut to use for simple cases where a variant is an overkill
+      pre_transform: '_none'
+      # [boolean=true] Generate one file for both, plated holes and non-plated holes, instead of two separated files
+      pth_and_npth_single_file: false
+      # [string] Force this replacement for %i when generating PTH and unified files
+      #pth_id: null
+      # [dict|string] Name of the drill report. Not generated unless a name is specified
+      report:
+        # [string=''] Name of the drill report. Not generated unless a name is specified.
+        # (%i='drill_report' %x='txt')
+        filename: ''
+      # [number=0] number of digits for mantissa part of coordinates (0 is auto)
+      right_digits: 0
+      # [boolean=true] Use route command for oval holes (G00), otherwise use G85
+      route_mode_for_oval_holes: true
+      # [boolean=false] Use the auxiliary axis as origin for coordinates
+      use_aux_axis_as_origin: false
+      # [string=''] Board variant to apply.
+      # Used for sub-PCBs
+      variant: ''
+      # [string='DECIMAL_FORMAT'] [DECIMAL_FORMAT,SUPPRESS_LEADING,SUPPRESS_TRAILING,KEEP_ZEROS] How to handle the zeros
+      zeros_format: 'DECIMAL_FORMAT'
+  # Gerber format:
+  # This output is what you get from the File/Plot menu in pcbnew.
+  # If you use custom fonts and/or colors please consult the `resources_dir` global variable.
+  - name: 'gerber_example'
+    comment: 'This is the main fabrication format for the PCB.'
+    type: 'gerber'
+    dir: 'gerber'
+    options:
+      # [boolean=true] Creates a file with information about all the generated gerbers.
+      # You can use it in gerbview to load all gerbers at once
+      create_gerber_job_file: true
+      # [list(dict)] A list of customized reports for the manufacturer
+      #custom_reports:
+      #  # [string=''] Content for the report. Use ${basename} for the project name without extension.
+      #  # Use ${filename(LAYER)} for the file corresponding to LAYER
+      #  - content: ''
+      #    # [string='Custom_report.txt'] File name for the custom report
+      #    output: ''
+      # [boolean=false] Disable aperture macros (workaround for buggy CAM software) (KiCad 6)
+      disable_aperture_macros: false
+      # [string|list(string)='_none'] Name of the filter to mark components as not fitted.
+      # A short-cut to use for simple cases where a variant is an overkill
+      dnf_filter: '_none'
+      # [string=''] Used to configure the edge cuts layer extension for Protel mode. Include the dot
+      edge_cut_extension: ''
+      # [boolean=true] Do not include the PCB edge layer
+      exclude_edge_layer: true
+      # [boolean=false] Do not plot the component pads in the silk screen (KiCad 5.x only)
+      exclude_pads_from_silkscreen: false
+      # [boolean=false] Include references and values even when they are marked as invisible
+      force_plot_invisible_refs_vals: false
+      # [string='%f-%i%I%v.%x'] Name for the gerber job file (%i='job', %x='gbrjob'). Affected by global options
+      gerber_job_file: '%f-%i%I%v.%x'
+      # [number=4.6] This the gerber coordinate format, can be 4.5 or 4.6
+      gerber_precision: 4.6
+      # [string=''] Used to change the Protel style extensions for inner layers.
+      # The replacement pattern can contain %n for the inner layer number and %N for the layer number.
+      # Example '.g%n'
+      inner_extension_pattern: ''
+      # [number=0.1] [0.02,2] Line_width for objects without width [mm] (KiCad 5)
+      line_width: 0.1
+      # [string='%f-%i%I%v.%x'] Output file name, the default KiCad name if empty.
+      # IMPORTANT! KiCad will always create the file using its own name and then we can rename it.
+      # For this reason you must avoid generating two variants at the same directory when one of
+      # them uses the default KiCad name. Affected by global options
+      output: '%f-%i%I%v.%x'
+      # [boolean=true] Include the footprint references
+      plot_footprint_refs: true
+      # [boolean=true] Include the footprint values
+      plot_footprint_values: true
+      # [boolean=false] Include the frame and title block. Only available for KiCad 6+ and you get a poor result
+      # (i.e. always the default worksheet style, also problems expanding text variables).
+      # The `pcb_print` output can do a better job for PDF, SVG, PS, EPS and PNG outputs
+      plot_sheet_reference: false
+      # [string|list(string)='_none'] Name of the filter to transform fields before applying other filters.
+      # A short-cut to use for simple cases where a variant is an overkill
+      pre_transform: '_none'
+      # [number=0.1] Line width for the sketched pads [mm], see `sketch_pads_on_fab_layers` (KiCad 6+)
+      # Note that this value is currently ignored by KiCad (6.0.9)
+      sketch_pad_line_width: 0.1
+      # [boolean=false] Draw only the outline of the pads on the *.Fab layers (KiCad 6+)
+      sketch_pads_on_fab_layers: false
+      # [boolean=false] Subtract the solder mask from the silk screen
+      subtract_mask_from_silk: false
+      # [boolean=true] Cover the vias
+      tent_vias: true
+      # [boolean=false] Use uppercase names for the extensions
+      uppercase_extensions: false
+      # [boolean=false] Use the auxiliary axis as origin for coordinates
+      use_aux_axis_as_origin: false
+      # [boolean=true] Include netlist metadata
+      use_gerber_net_attributes: true
+      # [boolean=true] Use the extended X2 format (otherwise use X1 formerly RS-274X)
+      use_gerber_x2_attributes: true
+      # [boolean=false] Use legacy Protel file extensions
+      use_protel_extensions: false
+      # [string=''] Board variant to apply
+      variant: ''
+    layers: 'selected'
