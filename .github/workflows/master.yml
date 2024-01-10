@@ -24,3 +24,9 @@ jobs:
           name: gerber
           path: gerber/*
           if-no-files-found: error
+      - name: Upload PNG images
+        uses: actions/upload-artifact@v4
+        with:
+          name: png
+          path: img/*
+          if-no-files-found: error

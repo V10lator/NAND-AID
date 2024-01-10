@@ -27,7 +27,6 @@ outputs:
       exclude_edge_layer: false
       gerber_job_file: '%f-%i%I%v.%x'
       gerber_precision: 4.6
-#      output: '%f-%i%I%v.%x'
       sketch_pad_line_width: 0.1
       subtract_mask_from_silk: false
       tent_vias: true
@@ -39,7 +38,7 @@ outputs:
   - name: 'pcbdraw top'
     comment: 'Create a 2D PNG image (top).'
     type: 'pcbdraw'
-    dir: './'
+    dir: 'img'
     options:
       add_to_variant: false
       bottom: true
@@ -69,7 +68,7 @@ outputs:
   - name: 'pcbdraw bottom'
     comment: 'Create a 2D PNG image (bottom).'
     type: 'pcbdraw'
-    dir: './'
+    dir: 'img'
     options:
       add_to_variant: false
       bottom: true
