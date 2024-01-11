@@ -41,7 +41,7 @@ outputs:
     dir: 'img'
     options:
       add_to_variant: false
-      bottom: true
+      bottom: false
       dpi: 1200
       format: 'png'
       margin:
