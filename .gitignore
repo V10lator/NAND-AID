@@ -2,6 +2,7 @@
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.kicad_pro-bak
 *.kicad_sch-bak
 *.kicad_pr1
 *.sch-bak
@@ -17,3 +18,5 @@ fp-info-cache
 board2pdf.config.ini
 gerber
 img
+kibot_errors.filter
+*.lck
