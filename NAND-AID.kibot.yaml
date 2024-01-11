@@ -54,14 +54,14 @@ outputs:
       show_solderpaste: false
       size_detection: 'kicad_edge'
       style:
-        board: '#208b47'
+        board: '#1c3b2b'
         clad: '#240d00'
-        copper: '#285e3a'
+        copper: '#3f6150'
         highlight_on_top: false
         highlight_padding: 1.5
         highlight_style: 'stroke:none;fill:#ff0000;opacity:0.5;'
         outline: '#000000'
-        pads: '#8b898c'
+        pads: '#d6d6d6'
         silk: '#d5dce4'
         vcut: '#bf2600'
       warnings: 'visible'
@@ -84,14 +84,14 @@ outputs:
       show_solderpaste: false
       size_detection: 'kicad_edge'
       style:
-        board: '#208b47'
+        board: '#1c3b2b'
         clad: '#240d00'
-        copper: '#285e3a'
+        copper: '#3f6150'
         highlight_on_top: false
         highlight_padding: 1.5
         highlight_style: 'stroke:none;fill:#ff0000;opacity:0.5;'
         outline: '#000000'
-        pads: '#8b898c'
+        pads: '#d6d6d6'
         silk: '#d5dce4'
         vcut: '#bf2600'
       warnings: 'visible'
