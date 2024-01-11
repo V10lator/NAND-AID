@@ -47,7 +47,7 @@ outputs:
       margin:
         bottom: 0
         left: 0
-        right: 0
+        right: -1
         top: 0
       outline_width: 0.1
       show_components: none
@@ -76,7 +76,7 @@ outputs:
       format: 'png'
       margin:
         bottom: 0
-        left: 0
+        left: -1
         right: 0
         top: 0
       outline_width: 0.1
