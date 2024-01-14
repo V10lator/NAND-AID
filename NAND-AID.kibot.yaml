@@ -7,33 +7,52 @@ outputs:
     type: 'excellon'
     dir: 'gerber'
     options:
-      map:
-        output: '%f-%i%I%v.%x'
-        type: 'gerber'
+      map: 'gerber'
       metric_units: false
-      minimal_header: false
+      minimal_header: true
       mirror_y_axis: false
-      output: '%f-%i%I%v.%x'
       pth_and_npth_single_file: false
       route_mode_for_oval_holes: true
-      zeros_format: 'DECIMAL_FORMAT'
+      zeros_format: 'SUPPRESS_LEADING'
+      left_digits: 2
+      right_digits: 4
   - name: 'gerber'
     comment: 'Create main fabrication (except drilling) instructions.'
     type: 'gerber'
     dir: 'gerber'
     options:
-      create_gerber_job_file: true
-      disable_aperture_macros: false
-      exclude_edge_layer: false
-      gerber_job_file: '%f-%i%I%v.%x'
-      gerber_precision: 4.6
-      sketch_pad_line_width: 0.1
       subtract_mask_from_silk: false
       tent_vias: true
       use_gerber_net_attributes: true
       use_gerber_x2_attributes: true
-      use_protel_extensions: false
-    layers: 'selected'
+    layers:
+      - layer: F.Cu
+        suffix: F_Cu
+        description: Front copper
+      - layer: B.Cu
+        suffix: B_Cu
+        description: Bottom copper
+      - layer: F.Paste
+        suffix: F_Paste
+        description: Front solder paste
+      - layer: B.Paste
+        suffix: B_Paste
+        description: Back solder paste
+      - layer: F.Silkscreen
+        suffix: F_Silkscreen
+        description: Front silkscreen (artwork)
+      - layer: B.Silkscreen
+        suffix: B_Silkscreen
+        description: Bottom silkscreen (artwork)
+      - layer: F.Mask
+        suffix: F_Mask
+        description: Front soldermask (negative)
+      - layer: B.Mask
+        suffix: B_Mask
+        description: Bottom soldermask (negative)
+      - layer: Edge.Cuts
+        suffix: Edge_Cuts
+        description: Board shape
 
   - name: 'pcbdraw top'
     comment: 'Create a 2D PNG image (top).'
