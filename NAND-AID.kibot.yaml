@@ -1,6 +1,9 @@
 kibot:
   version: 1
 
+preflight:
+  check_zone_fills: true
+
 outputs:
   - name: 'excellon'
     comment: 'Create driling instructions.'
