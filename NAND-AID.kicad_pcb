@@ -1092,7 +1092,7 @@
 
   (footprint "V10lator's footprints:Voultar's Micro SD" (layer "F.Cu")
     (tstamp d02bbe1d-f27a-4ad6-99dc-a49974abccb5)
-    (at 149.831779 99.059999)
+    (at 149.837 99.059999)
     (fp_text reference "" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.1)))
       (tstamp 89ea32e2-b628-4ce0-891e-832dd2d4c7f4)
