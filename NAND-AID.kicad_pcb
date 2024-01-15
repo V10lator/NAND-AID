@@ -288,7 +288,7 @@
 
   (footprint "V10lator's footprints:LOGO Toad" (layer "F.Cu")
     (tstamp 7e426df0-05bd-48a9-9358-5873921edcfa)
-    (at 146.24 99.2354)
+    (at 146.2 99.1854)
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "G***" (at 0 0) (layer "F.SilkS") hide
         (effects (font (size 1.5 1.5) (thickness 0.3)))
@@ -12664,15 +12664,15 @@
   (segment (start 157.477 98.510614) (end 158.276 98.510614) (width 0.2) (layer "F.Cu") (net 2) (tstamp 35b96805-b46e-4d39-a71f-3ca6ee154c06))
   (segment (start 157.476539 98.5106) (end 157.476539 98.1106) (width 0.2) (layer "F.Cu") (net 2) (tstamp 3a1fa7ac-886f-49fd-91c2-10f58a7cdb00))
   (segment (start 158.077 96.7101) (end 157.677 96.710126) (width 0.2) (layer "F.Cu") (net 2) (tstamp 4033654a-ba2c-4946-bffc-1fc455217471))
-  (segment (start 149.83 95.6043) (end 149.83 102.81) (width 0.3) (layer "F.Cu") (net 2) (tstamp 409691be-61bc-46df-a574-e9ef7b05cee4))
+  (segment (start 149.78 95.6043) (end 149.78 102.81) (width 0.3) (layer "F.Cu") (net 2) (tstamp 409691be-61bc-46df-a574-e9ef7b05cee4))
   (segment (start 158.476617 98.1106) (end 158.476617 97.7088) (width 0.2) (layer "F.Cu") (net 2) (tstamp 473536b6-6f15-428d-8331-937ece08609b))
   (segment (start 158.077221 97.309854) (end 158.077382 96.7101) (width 0.2) (layer "F.Cu") (net 2) (tstamp 543adeba-7e06-491b-91b1-b8f878febec1))
-  (segment (start 142.599 95.6043) (end 142.599 102.81) (width 0.3) (layer "F.Cu") (net 2) (tstamp 6c4cf291-1da4-4ce1-9496-45f1d11814a6))
+  (segment (start 142.559 95.6043) (end 142.559 102.81) (width 0.3) (layer "F.Cu") (net 2) (tstamp 6c4cf291-1da4-4ce1-9496-45f1d11814a6))
   (segment (start 157.077 97.7088) (end 158.676 97.708832) (width 0.2) (layer "F.Cu") (net 2) (tstamp 6eb7f720-a54b-4b2a-a323-eb1eac4d5ad5))
-  (segment (start 149.83 95.6043) (end 142.599 95.6043) (width 0.3) (layer "F.Cu") (net 2) (tstamp 8dabfe6a-41a6-49c3-87f5-05748c6c67c0))
+  (segment (start 149.78 95.6043) (end 142.559 95.6043) (width 0.3) (layer "F.Cu") (net 2) (tstamp 8dabfe6a-41a6-49c3-87f5-05748c6c67c0))
   (segment (start 157.676958 97.309854) (end 157.677122 96.7101) (width 0.2) (layer "F.Cu") (net 2) (tstamp 9d39888e-409b-4ff2-be03-871696a2e063))
   (segment (start 158.676474 97.3099) (end 158.676474 97.7088) (width 0.2) (layer "F.Cu") (net 2) (tstamp b5576bf1-7a45-447c-b1de-0171aeae0135))
-  (segment (start 142.599 102.81) (end 149.83 102.81) (width 0.3) (layer "F.Cu") (net 2) (tstamp c326e353-db2c-49ea-b4d4-21d419f9ccc0))
+  (segment (start 142.559 102.81) (end 149.78 102.81) (width 0.3) (layer "F.Cu") (net 2) (tstamp c326e353-db2c-49ea-b4d4-21d419f9ccc0))
   (segment (start 158.077221 97.309854) (end 158.676 97.3099) (width 0.2) (layer "F.Cu") (net 2) (tstamp d2de4b81-977b-4d92-9fce-9c0238c07c6d))
   (segment (start 157.076854 97.3099) (end 157.076854 97.7088) (width 0.2) (layer "F.Cu") (net 2) (tstamp ec7fa8fc-09be-4b4d-b40f-9e5bbea1cb2f))
   (segment (start 134.76173 108.46258) (end 134.80161 108.46816) (width 0.2) (layer "F.Cu") (net 3) (tstamp 0151a5ed-4dad-4c93-9ddb-224ab051c2d7))
@@ -12980,8 +12980,8 @@
 
   (zone (net 2) (net_name "GND") (layer "F.Cu") (tstamp 02fc9485-fc0f-4266-9c49-dbb55ba954d3) (hatch edge 0.5)
     (priority 2)
-    (connect_pads (clearance 0.025))
-    (min_thickness 0.2) (filled_areas_thickness no)
+    (connect_pads (clearance 0))
+    (min_thickness 0.25) (filled_areas_thickness no)
     (fill (thermal_gap 0.5) (thermal_bridge_width 0.5) (island_removal_mode 1) (island_area_min 10))
     (polygon
       (pts
@@ -13067,8 +13067,8 @@
     )
   )
   (zone (net 2) (net_name "GND") (layer "B.Cu") (tstamp 596c13c1-0899-477f-b883-8fd371e66c7b) (hatch edge 0.5)
-    (connect_pads (clearance 0.025))
-    (min_thickness 0.2) (filled_areas_thickness no)
+    (connect_pads (clearance 0))
+    (min_thickness 0.25) (filled_areas_thickness no)
     (fill (thermal_gap 0.5) (thermal_bridge_width 0.5))
     (polygon
       (pts
