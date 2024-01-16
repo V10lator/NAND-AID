@@ -12650,12 +12650,9 @@
     (effects (font (size 0.9 0.75) (thickness 0.125) italic) (justify bottom))
   )
 
-  (segment (start 150.916294 109.241465) (end 150.914733 109.239904) (width 0.4) (layer "F.Cu") (net 1) (tstamp 1ac4bcf9-42f8-4716-8193-5eec4a060a3a))
   (segment (start 149.304 111.46) (end 133.21 111.46) (width 0.4) (layer "F.Cu") (net 1) (tstamp 6d05587f-b29f-4cf7-8954-2347da325463))
   (segment (start 150.374616 111.039234) (end 150.570669 110.843181) (width 0.4) (layer "F.Cu") (net 1) (tstamp 7866e08f-ca97-4330-a088-79bdb4a67560))
-  (segment (start 150.913987 108.197789) (end 150.913987 107.49817) (width 0.4) (layer "F.Cu") (net 1) (tstamp 845e9f69-4f7b-4097-84ee-09a12b3d565b))
-  (segment (start 150.916294 110.04) (end 150.916294 109.241465) (width 0.4) (layer "F.Cu") (net 1) (tstamp a4fc8232-7302-496a-bbac-35c941b5f0af))
-  (segment (start 150.914733 109.239904) (end 150.914733 108.216019) (width 0.4) (layer "F.Cu") (net 1) (tstamp a598b65d-b1c3-4040-ad54-14ee8de9aa01))
+  (segment (start 150.916294 110.04) (end 150.916294 107.2) (width 0.4) (layer "F.Cu") (net 1) (tstamp a4fc8232-7302-496a-bbac-35c941b5f0af))
   (segment (start 151.261901 104.911872) (end 150.801164 106.109001) (width 0.6) (layer "F.Cu") (net 1) (tstamp ef8e66af-f08a-4b70-b5f6-8834bce20bd8))
   (arc (start 150.570669 110.843181) (mid 150.827561 110.458716) (end 150.91777 110.005206) (width 0.4) (layer "F.Cu") (net 1) (tstamp 360073f6-2894-4e34-97dc-4eb6e43b9ed3))
   (arc (start 133.20975 111.460505) (mid 132.217927 111.049678) (end 131.8071 110.057855) (width 0.4) (layer "F.Cu") (net 1) (tstamp 520762ef-2690-458b-9b00-900e94e8307c))
