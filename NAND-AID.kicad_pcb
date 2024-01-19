@@ -1242,7 +1242,7 @@
 
   (footprint "NAND-AID:GND hole" (layer "F.Cu")
     (tstamp f88895ec-da20-464c-8a9f-ced3b8217ca3)
-    (at 154.487 96.6026)
+    (at 154.487 96.66)
     (attr allow_missing_courtyard)
     (fp_text reference "" (at 0 0) (layer "F.SilkS")
         (effects (font (size 1.27 1.27) (thickness 0.15)))
