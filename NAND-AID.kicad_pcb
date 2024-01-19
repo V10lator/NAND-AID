@@ -288,7 +288,7 @@
 
   (footprint "NAND-AID:LOGO Toad" (layer "F.Cu")
     (tstamp 7e426df0-05bd-48a9-9358-5873921edcfa)
-    (at 146.2 99.1854)
+    (at 146.2 98.8454)
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "G***" (at 0 0) (layer "F.SilkS") hide
         (effects (font (size 1.5 1.5) (thickness 0.3)))
@@ -13030,10 +13030,10 @@
     (fill (thermal_gap 0.5) (thermal_bridge_width 0.5))
     (polygon
       (pts
-        (xy 143.04168 96.075342)
-        (xy 149.531153 96.080996)
-        (xy 149.530481 102.464624)
-        (xy 143.041008 102.45897)
+        (xy 143.04168 95.735342)
+        (xy 149.531153 95.740996)
+        (xy 149.530481 102.124624)
+        (xy 143.041008 102.11897)
       )
     )
   )
