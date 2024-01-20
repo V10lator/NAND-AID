@@ -1,4 +1,4 @@
-(footprint "Dump Pad no VIA" (version 20221018) (generator pcbnew)
+(footprint "Dump Pad" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
   (attr smd board_only)
   (fp_text reference "Ref**" (at 0 0) (layer "F.SilkS")
