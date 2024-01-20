@@ -6,5 +6,5 @@ See [Using NAND-AID to repair a broken eMMC (fix 160-0103 system memory error)](
   <img src="https://public.nbg01.v10lator.de/web/NAND-AID/NAND-AID-top.png" alt="NAND-AID top view" width="40%"> &nbsp; &nbsp;
   <img src="https://public.nbg01.v10lator.de/web/NAND-AID/NAND-AID-bottom.png" alt="NAND-AID bottom view" width="40%"><br />
   <br />
-  <img src="https://public.nbg01.v10lator.de/web/NAND-AID/NAND-AID-evolution.png" alt="NAND-AID evolution">
+  <img src="https://public.nbg01.v10lator.de/web/NAND-AID/NAND-AID-evolution.jpg" alt="NAND-AID evolution">
 </p>
