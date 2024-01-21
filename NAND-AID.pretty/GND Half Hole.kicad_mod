@@ -12,6 +12,6 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp d54f7847-fa20-4139-8721-715df84e1c5e)
   )
-  (pad "" thru_hole circle (at 0 0) (size 3.5 3.5) (drill 3) (property pad_prop_castellated) (layers "*.Cu" "*.Mask")
+  (pad "" thru_hole circle (at 0 0) (size 3.5 3.5) (drill 3) (property pad_prop_castellated) (layers "*.Cu" "*.Paste" "*.Mask")
     (zone_connect 2) (tstamp 91afedc0-5bbf-41b9-ab88-76d5df4a69eb))
 )
