@@ -20,3 +20,4 @@ gerber
 img
 kibot_errors.filter
 *.lck
+sym-lib-table
