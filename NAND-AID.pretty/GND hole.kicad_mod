@@ -13,6 +13,6 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 7dbadc9d-8d28-4714-bfa5-6a1cb5dd8e4d)
   )
-  (pad "" thru_hole oval (at 0 0) (size 3.5 4.3) (drill oval 3 3.8) (property pad_prop_castellated) (layers "*.Cu" "*.Paste" "*.Mask")
+  (pad "" thru_hole oval (at 0 0) (size 3.5 3.6) (drill oval 3 3.3 (offset 0 -0.045)) (property pad_prop_castellated) (layers "*.Cu" "*.Paste" "*.Mask")
     (zone_connect 1) (thermal_bridge_width 0.4) (thermal_bridge_angle 45) (thermal_gap 0.3) (tstamp c546191a-c528-44aa-9f34-ed3239449762))
 )
