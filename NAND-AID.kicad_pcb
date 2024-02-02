@@ -12556,6 +12556,8 @@
     )
 
     (stroke (width 0) (type solid)) (fill solid) (layer "B.SilkS") (tstamp ffeb8ab2-e6fd-412b-a744-2e62b7ac58a5))
+  (gr_rect (start 139.7 88.9) (end 160.02 96.329282)
+    (stroke (width 0.15) (type default)) (fill solid) (layer "B.Mask") (tstamp b313199a-15af-45e0-a4f2-439f5012fc1e))
   (gr_line (start 141.60475 103.729) (end 141.60475 92.2846)
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 02da8a1a-710a-45b8-b3ec-d6bd7b395d1b))
   (gr_line (start 137.366 104.29875) (end 141.034 104.29875)
