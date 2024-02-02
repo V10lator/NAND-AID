@@ -12612,7 +12612,7 @@
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp f9871899-034a-4e97-b647-d1f40a65da9b))
   (gr_arc (start 131.2728 111.91903) (mid 130.047646 111.411554) (end 129.54017 110.1864)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp fa0cbe40-6e78-41ad-ac9f-4f8a668405d6))
-  (gr_text "v3.0" (at 146.269746 102.551715) (layer "B.SilkS") (tstamp 573be328-a2c5-4d78-873e-fd25e79682f9)
+  (gr_text "v4.0" (at 146.269746 102.551715) (layer "B.SilkS") (tstamp 573be328-a2c5-4d78-873e-fd25e79682f9)
     (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
   )
   (gr_text "gbatemp.net/threads/636361" (at 152.860979 110.117886) (layer "B.SilkS") (tstamp eae6f050-da7b-4d58-89ca-b2a818a1b884)
