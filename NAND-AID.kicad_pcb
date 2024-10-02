@@ -18065,7 +18065,7 @@
 		(layer "Edge.Cuts")
 		(uuid "fa0cbe40-6e78-41ad-ac9f-4f8a668405d6")
 	)
-	(gr_text "v4.0"
+	(gr_text "v4.1"
 		(at 146.269746 102.551715 0)
 		(layer "B.SilkS")
 		(uuid "573be328-a2c5-4d78-873e-fd25e79682f9")
